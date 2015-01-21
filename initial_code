@@ -1,0 +1,24 @@
+var numbers = [1, 2, 3, 4, 5];
+var newNumbers = [];
+var everything = [];
+numbers.double = function(someNum){
+    var dub = someNum*2;
+    return dub;
+};
+
+for(var i=0; i<numbers.length; i++){
+ //console.log(numbers.double(numbers[i]));
+
+var receive = numbers.double(numbers[i]);
+    
+  newNumbers.push(receive);
+ 
+var newKey = {key: numbers[i], value: newNumbers[i]};
+everything.push(newKey);
+console.log(everything[i]);
+  
+  console.log(newNumbers[i]);
+  //var bob = numbers[i]*2;
+  //newNumbers.push(bob);
+}
+//console.log(newNumbers);
